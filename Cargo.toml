@@ -5,6 +5,7 @@ version = "0.1.4"
 edition = "2021"
 license = "MIT"
 authors = [ "sner21" ]
+links = "tauri-plugin-penetrable"
 include = [
     "src/**",
     "Cargo.toml"
@@ -12,9 +13,9 @@ include = [
 keywords = ["tauri-plugin","penetrable","ignoreMouseEvents","click-through"]
 repository = "https://github.com/sner21/tauri-plugin-penetrable"
 readme = "readme.md"
+
 [dependencies]
 tauri = "2.0.4"
-
 
 [target."cfg(windows)".dependencies.windows]
 version = "0.39.0"
@@ -22,3 +23,6 @@ features = [
     "Win32_UI_WindowsAndMessaging",
     "Win32_Foundation"
 ]
+
+[build-dependencies]
+tauri-plugin = { version = "2.0.0", features = ["build"] }

@@ -1,0 +1,13 @@
+# Automatically generated - DO NOT EDIT!
+
+"$schema" = "../../schemas/schema.json"
+
+[[permission]]
+identifier = "allow-disable-penetrable"
+description = "Enables the disable_penetrable command without any pre-configured scope."
+commands.allow = ["disable_penetrable"]
+
+[[permission]]
+identifier = "deny-disable-penetrable"
+description = "Denies the disable_penetrable command without any pre-configured scope."
+commands.deny = ["disable_penetrable"]
